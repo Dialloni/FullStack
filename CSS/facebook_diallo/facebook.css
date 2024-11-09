@@ -1,0 +1,97 @@
+body{
+    background-color: #c5bbbb;
+    height: 10vh;
+  
+}
+
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+#containerBook{
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: green;
+    align-items: center;
+}
+
+.book{
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    margin-left: 110px;
+    margin-top: 130px;
+  
+}
+
+.connect{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    margin-top: 10px;
+    margin-left: 110px;
+  
+}
+
+#containerForm{
+    display: inline-block;
+    width: 30%;
+  height: 100vh;
+    padding: 10px;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+    border-radius: shadow;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: 5px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: shadow;
+  
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    width: 50vh;
+    background-color: blue;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+.create{
+   
+    color:white;
+    text-align: center;
+    background-color: green;
+
+}
+
+input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 50%;
+}

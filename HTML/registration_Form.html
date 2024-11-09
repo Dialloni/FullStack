@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <div>
+        <h1>DIALLO Registration Form</h1>
+        <form action="">
+            <div style="margin-bottom: 10px;">
+                <label for="fname" style="display: inline-block;">Name:</label>
+                <input type="text" id="fname" name="fname" style="display: inline-block;"><br>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="password" style="display: inline-block;">Password:</label>
+                <input type="password" id="password" name="password" style="display: inline-block;"><br>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="city" style="display: inline-block;">City:</label>
+                <input type="text" id="city" name="city" style="display: inline-block;"><br>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="state" style="display: inline-block;">State:</label>
+                <select id="country-state" name="country-state" style="display: inline-block;">
+                    <option value="">Select state</option>
+                    <option value="01">Adana Province</option>
+                    <option value="02">Adıyaman Province</option>
+                    <option value="03">Afyonkarahisar Province</option>
+                    <option value="04">Ağrı Province</option>
+                    <option value="68">Aksaray Province</option>
+                    <option value="05">Amasya Province</option>
+                    <option value="06">Ankara Province</option>
+                    <option value="07">Antalya Province</option>
+                    <option value="75">Ardahan Province</option>
+                    <option value="08">Artvin Province</option>
+                    <option value="09">Aydın Province</option>
+                    <option value="10">Balıkesir Province</option>
+                    <option value="74">Bartın Province</option>
+                    <option value="72">Batman Province</option>
+                    <option value="69">Bayburt Province</option>
+                    <option value="11">Bilecik Province</option>
+                    <option value="12">Bingöl Province</option>
+                    <option value="13">Bitlis Province</option>
+                    <option value="14">Bolu Province</option>
+                    <option value="15">Burdur Province</option>
+                    <option value="16">Bursa Province</option>
+                    <option value="17">Çanakkale Province</option>
+                    <option value="18">Çankırı Province</option>
+                    <option value="19">Çorum Province</option>
+                    <option value="20">Denizli Province</option>
+                    <option value="21">Diyarbakır Province</option>
+                    <option value="81">Düzce Province</option>
+                    <option value="22">Edirne Province</option>
+                    <option value="23">Elazığ Province</option>
+                    <option value="24">Erzincan Province</option>
+                    <option value="25">Erzurum Province</option>
+                    <option value="26">Eskişehir Province</option>
+                    <option value="27">Gaziantep Province</option>
+                    <option value="28">Giresun Province</option>
+                    <option value="29">Gümüşhane Province</option>
+                    <option value="30">Hakkâri Province</option>
+                    <option value="31">Hatay Province</option>
+                    <option value="76">Iğdır Province</option>
+                    <option value="32">Isparta Province</option>
+                    <option value="34">Istanbul Province</option>
+                    <option value="35">İzmir Province</option>
+                    <option value="46">Kahramanmaraş Province</option>
+                    <option value="78">Karabük Province</option>
+                    <option value="70">Karaman Province</option>
+                    <option value="36">Kars Province</option>
+                    <option value="37">Kastamonu Province</option>
+                    <option value="38">Kayseri Province</option>
+                    <option value="79">Kilis Province</option>
+                    <option value="71">Kırıkkale Province</option>
+                    <option value="39">Kırklareli Province</option>
+                    <option value="40">Kırşehir Province</option>
+                    <option value="41">Kocaeli Province</option>
+                    <option value="42">Konya Province</option>
+                    <option value="43">Kütahya Province</option>
+                    <option value="44">Malatya Province</option>
+                    <option value="45">Manisa Province</option>
+                    <option value="47">Mardin Province</option>
+                    <option value="33">Mersin Province</option>
+                    <option value="48">Muğla Province</option>
+                    <option value="49">Muş Province</option>
+                    <option value="50">Nevşehir Province</option>
+                    <option value="51">Niğde Province</option>
+                    <option value="52">Ordu Province</option>
+                    <option value="80">Osmaniye Province</option>
+                    <option value="53">Rize Province</option>
+                    <option value="54">Sakarya Province</option>
+                    <option value="55">Samsun Province</option>
+                    <option value="63">Şanlıurfa Province</option>
+                    <option value="56">Siirt Province</option>
+                    <option value="57">Sinop Province</option>
+                    <option value="58">Sivas Province</option>
+                    <option value="73">Şırnak Province</option>
+                    <option value="59">Tekirdağ Province</option>
+                    <option value="60">Tokat Province</option>
+                    <option value="61">Trabzon Province</option>
+                    <option value="62">Tunceli Province</option>
+                    <option value="64">Uşak Province</option>
+                    <option value="65">Van Province</option>
+                    <option value="77">Yalova Province</option>
+                    <option value="66">Yozgat Province</option>
+                    <option value="67">Zonguldak Province</option>
+                </select><br>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="zip" style="display: inline-block;">Zip Code:</label>
+                <input type="text" id="zip" name="zip" style="display: inline-block;"><br>
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+                <label for="gender" style="display: inline-block;">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" style="display: inline-block;">
+                <label for="male" style="display: inline-block;">Male</label>
+                <input type="radio" id="female" name="gender" value="female" style="display: inline-block;">
+                <label for="female" style="display: inline-block;">Female</label>
+                <input type="radio" id="other" name="gender" value="other" style="display: inline-block;">
+                <label for="other" style="display: inline-block;">Other</label><br>
+            </div>
+            
+            <input type="submit" value="Submit">
+           
+        </form>
+    </div>
+</body>
+</html>

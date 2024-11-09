@@ -1,0 +1,52 @@
+.resume h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.resume {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.center{
+    background-color: lightblue;
+    text-align: center;
+
+}
+img{
+    width: 50%;
+    height: 50%;
+}
+
+.skills{
+    background-color: gold;
+    text-align: right;
+}
+
+#name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: chartreuse;
+}
+
+#name1{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: navajowhite;
+    text-align: center;
+}
+.left-align {
+    text-align: left;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
