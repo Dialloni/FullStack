@@ -58,7 +58,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 20px;
-    height: 100vh;
+    height: 70vh;
 }
 
 .wrapper div {

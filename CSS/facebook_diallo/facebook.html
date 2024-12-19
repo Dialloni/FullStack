@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="facebook.css" />
-    <title>Document</title>
+    <title>Facebook Login</title>
   </head>
   <body>
     <div id="mainContainer">
       <div id="containerBook">
-        <h1 class="book">Facebook</h1>
-        <p class="connect">Connect with friends and the world around you.</p>
+        <h1 class="book">facebook</h1>
+        <p class="connect">
+          Connect with friends and the world<br />
+          around you on facebook.
+        </p>
       </div>
       <div id="containerForm">
         <form class="form" action="facebook.php" method="post">
@@ -19,8 +22,11 @@
           <input class="login" type="submit" value="Log In" />
           <a href="#">Forgot Password?</a>
           <hr />
-          <input class="create" type="submit" value="Create New Account" />
+          <button type="button" class="create">Create New Account</button>
         </form>
+        <div class="page">
+          <a id="removeLine" href=""> Create a Page </a> <span> for a celebrity, band or business.</span>
+        </div>
       </div>
     </div>
   </body>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dental.css" />
+    <title>The Dental Hygiene Association</title>
+  </head>
+  <body>
+    <div class="dentalHygien">
+      <img
+        id="imgDental"
+        src="/logo.png"
+        alt="Dental Hygiene Association Logo"
+      />
+      <h1 class="hdental">The Dental Hygiene Association</h1>
+    </div>
+
+    <nav class="navlist">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Adults</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Glossary</a></li>
+      </ul>
+    </nav>
+    <div class="percent"><h2>Only 46% of househood buy toothbrushes</h2></div>
+
+    <hr />
+    <main id="MainContainer">
+      <div class="leftList">
+        <h2>News & Events</h2>
+        <h4><a href=""> Click to find out more!</a></h4>
+        <ul>
+          <li>Irish Academy of Aesthetic Dentistry (IAAD) Meeting</li>
+          <li>Irish dentists report on eating disorders</li>
+          <li>IDA Annual Conference 2014</li>
+          <li>Maternal saliva predicts dental health</li>
+        </ul>
+      </div>
+
+      <div class="centerForm">
+        <h2>Find a Dentist</h2>
+        <p>
+          Looking for a dentist in your area? Enter any detail below and search
+          for a dentist near you!
+        </p>
+        <form action="">
+          <label for="firstName">First Name of dentist:</label>
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location"placeholder="Location" required/>
+          <p>What type of dentist are you looking for?</p>
+          <div class="checkboxe">
+            <input type="checkbox" class="general" name="type" value="general" />
+            <label for="general">Orthodontist</label>
+            <br>
+            <input type="checkbox" class="general" name="type" value="general" />
+            <label for="general">General Dental Dental Practitioner</label>
+          </div>
+          <hr />
+        </form>
+      </div>
+
+      <div class="rightTips">
+        <h2>Quick Tips</h2>
+        <ul>
+          <li>Change your toothbrush every 3 <br> months</li>
+          <li>Clean your tongue as well as your <br> teeth</li>
+          <li>Floss every day</li>
+          <li>See your dentist every 6 month</li>
+          <li>Cut down on how often you have <br> sweet drinks and food</li>
+          
+        </ul>
+      </div>
+    </main>
+
+    <hr />
+  </body>
+</html>
