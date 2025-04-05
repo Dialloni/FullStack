@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <h1>User {{ user.id }} </h1>
+    
+        <label for="fullname">Full Name</label>
+        {{ user.fullname }}
+        <br>
+        <label for="email">Email</label>
+        {{ user.email }}
+        <br>
+        <label for="created_at">Created</label>
+        {{ user.created_at }}
+        <br>
+    <a href="/users/{{ user.id }}/edit">Edit</a> | <a href="">Delete</a>
+</div>
+    
+{% endblock %}

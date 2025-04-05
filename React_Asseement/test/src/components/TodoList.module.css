@@ -1,0 +1,116 @@
+/* TodoList styles */
+.todoList {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 350px;
+  margin: 15px auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoListItems {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove the dots */
+}
+
+.todoItem {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.todoItem:last-child {
+  border-bottom: none;
+}
+
+.inputField {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.addButton {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.noTodosMessage {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* UserProfileInfo styles */
+.userProfileInfo {
+  text-align: center;
+}
+
+.avatar {
+  width: 80px; /* Smaller size */
+  height: 80px; /* Smaller size */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* UserProfilePosts styles */
+.userProfilePosts {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 350px;
+  margin: 15px auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove the dots */
+}
+
+.postItem {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.postItem:last-child {
+  border-bottom: none;
+}
+
+.noPostsMessage {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-top: 15px;
+}

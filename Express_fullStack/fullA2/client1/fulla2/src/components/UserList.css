@@ -1,0 +1,23 @@
+.user-list {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.user-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-item a {
+  text-decoration: none;
+  color: #61dafb;
+  font-size: 18px;
+}
+
+.user-item a:hover {
+  color: #21a1f1;
+}

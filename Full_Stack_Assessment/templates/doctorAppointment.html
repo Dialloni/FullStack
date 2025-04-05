@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <a href="{{ url_for('index') }}" class="button">Home</a>
+    <h2>Doctor's Appointments</h2>
+    <table class="appointments">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Patient Name</th>
+                <th>Complain</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for appointment in appointments %}
+            <tr>
+                <td>{{ appointment.date }}</td>
+                <td>{{ appointment.time }}</td>
+                <td>{{ appointment.patient_name }}</td>
+                <td>{{ appointment.complain }}</td>
+                <td>
+                    <a href="/appointments/{{ appointment.id }}/cancel" class="button cancel">Cancel</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('new_appointment') }}" class="button">Add new Appointment</a>
+</div>
+{% endblock %}

@@ -1,0 +1,212 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Full-page background image */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(45deg, #9ab419c8, #292786, #dc148f);
+  background-size: 300% 300%; /* Make the gradient larger for smooth animation */
+  /*animation: gradient-animation 8s infinite ease-in-out; /* Animate the gradient */
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+  background-image: url("./assets/images/cute.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ background-attachment: fixed;;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Center the auth-container on the page */
+.auth-container {
+  position: relative;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: rgba(190, 167, 143, 0.9); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 1; /* Ensure the container is above the background image */  
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px; /* Larger font size for the heading */
+  color: #ffffff; /* White text for better contrast */
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased spacing between form elements */
+}
+
+.auth-container input {
+  padding: 15px; /* Larger padding for input fields */
+  border: 1px solid #ced4da; /* Light border */
+  border-radius: 6px; /* Slightly larger border radius */
+  font-size: 18px; /* Larger font size for input text */
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4); /* Stronger blue glow */
+}
+
+.auth-container button {
+  padding: 15px; /* Larger padding for the button */
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 6px; /* Slightly larger border radius */
+  font-size: 18px; /* Larger font size for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.auth-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.auth-container p {
+  text-align: center;
+  color: red; /* Error message color */
+  font-size: 16px; /* Slightly larger font size for error messages */
+  margin-top: -10px;
+}
+
+
+.auth-container .link a {
+  color: #ffffff; /* White text for better contrast */
+  text-decoration: none;
+}
+
+.auth-container .link a:hover {
+  text-decoration: underline;
+   /* Slightly larger size on hover */
+}
+
+/* Butterfly animation */
+.butterfly {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url('https://scitechdaily.com/images/Orange-Monarch-Butterfly.jpg') no-repeat center center;
+  background-size: contain;
+  animation: fly 10s linear infinite;
+}
+
+.butterfly-1 {
+  top: 30%;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.butterfly-2 {
+  top: 60%;
+  left: -150px;
+  animation-delay: 2s;
+}
+
+.butterfly-3 {
+  top: 10%;
+  left: -200px;
+  animation-delay: 4s;
+}
+
+.butterfly-4 {
+  top: 80%;
+  left: -250px;
+  animation-delay: 6s;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    left: -100px;
+  }
+  25% {
+    transform: translateY(-50px) rotate(10deg);
+  }
+  50% {
+    transform: translateY(0) rotate(-10deg);
+    left: 50%;
+  }
+  75% {
+    transform: translateY(50px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    left: 110%;
+  }
+}
+

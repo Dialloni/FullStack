@@ -1,0 +1,24 @@
+.post-list {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.post-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.post-item small {
+  display: block;
+  margin-top: 10px;
+  color: #888;
+}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <h1>Edit User {{ user.id }} </h1>
+    <form action="/users/{{ user.id }}" method="POST">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" value="{{ user.fullname.split(" ")[0] }}" required>
+        <br>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" value="{{ user.fullname.split(" ")[1] }}" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" value="{{ user.email}}" required>
+        <br>
+        <input type="submit" value="update">
+    </form>
+    <a href="/users">Go Back</a> | <a href="/users/{{ user.id }}">Show</a> 
+</div>
+    
+{% endblock %}

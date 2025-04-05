@@ -1,0 +1,148 @@
+/* General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #e6f7ff; /* Light blue background */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Team Section */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid div {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.grid h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.grid p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+/* List Styles */
+.list-disc {
+  margin-left: 20px;
+  color: #34495e;
+}
+
+.list-disc li {
+  margin-bottom: 10px;
+}
+
+/* Blockquote Styles */
+blockquote {
+  font-size: 1.1rem;
+  color: #555;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-left: 5px solid #3498db;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Call to Action Section */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.mt-6 {
+  margin-top: 30px;
+}
+
+.text-blue-500 {
+  color: #3498db;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.mt-6 p {
+  margin-bottom: 10px;
+}
+
+.mt-6 a {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid img {
+    width: 80px;
+    height: 80px;
+  }
+}

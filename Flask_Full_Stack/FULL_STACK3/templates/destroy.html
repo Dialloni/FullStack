@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destroy Course</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Destroy Course</h1>
+    <p>Are you sure you want to delete the following course?</p>
+    <p>Name: {{ course.name }}</p>
+    <p>Description: {{ course.description }}</p>
+    <form method="POST" action="/delete/{{ course.id }}">
+        <button type="submit">Yes</button>
+    </form>
+    <a href="/">No</a>
+</div>
+</body>
+</html>

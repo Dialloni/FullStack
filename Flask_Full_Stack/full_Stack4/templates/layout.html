@@ -1,0 +1,47 @@
+<!-- filepath: /Users/abubakardiallo/Desktop/skillSpire/Full_Stack/full_Stack4/templates/layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Assignment 4</title>
+    <link href="{{ url_for('static', filename='layout.css') }}" rel="stylesheet">
+    <style>
+        /* filepath: /Users/abubakardiallo/Desktop/skillSpire/Full_Stack/full_Stack4/static/layout.css */
+        :before,
+:after {
+    content: '';
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    border: 1px solid red;
+    text-align: center; /* Center text inside the container */
+    padding: 20px; /* Add some padding for better appearance */
+    background-color: white; /* Add background color to distinguish the container */
+    margin-top: 20px; /* Move the container down a bit from the top */
+}
+.container table, .container th, .container td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+    </style>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

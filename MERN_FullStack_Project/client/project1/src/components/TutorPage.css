@@ -1,0 +1,28 @@
+/* TutorsPage.css */
+
+/* Styles for tutor images */
+.tutor-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover; /* Ensures the image focuses on the face */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 0 auto; /* Centers the image */
+  display: block; /* Ensures proper centering */
+}
+
+/* Card styling for tutors */
+.tutor-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensures the image stays within the card */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.tutor-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Center the card content */
+.tutor-card-body {
+  text-align: center;
+}

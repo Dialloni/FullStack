@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add User</h1>
+    <form action="/addusers" method="POST">
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Enter your email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <br>
+        <button type="submit">Add</button>
+    </form>
+
+    <h1>All Users:</h1>
+    <ul>
+        {% for user in all_users %}
+        <h1>-------------------------------</h1>
+        <li>Email: {{ user.email }}</li>
+        <li>Password: {{ user.password }}</li>
+        <li><a href="/update/{{ user.id }}">Edit User</a></li>
+        <li><a href="/delete/{{ user.id }}">Delete User</a></li>
+        <h1>-------------------------------</h1>
+        {% endfor %}
+    </ul> 
+
+</body>
+</html>

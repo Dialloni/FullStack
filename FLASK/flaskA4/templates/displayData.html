@@ -1,0 +1,11 @@
+{% if user_data %}
+<div class="user-info">
+  <h3>User Information</h3>
+  <div><strong>First Name:</strong> {{ user_data.fname }}</div>
+  <div><strong>Last Name:</strong> {{ user_data.lname }}</div>
+  <div><strong>Email:</strong> {{ user_data.email }}</div>
+  <div><strong>State:</strong> {{ user_data.state }}</div>
+  <div><strong>City:</strong> {{ user_data.city }}</div>
+  <div><strong>Zip Code:</strong> {{ user_data.zipcode }}</div>
+</div>
+{% endif %}
